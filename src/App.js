@@ -1,5 +1,6 @@
 import Paragraph from "./components/Paragraph/Paragraph";
 import Image from "./components/Image/Image";
+import Alert from "./components/Alert/Alert"
 import flowersImage from "./Assets/spring-flowers.jpg";
 import milkyWayImage from "./Assets/milky-way.jpg";
 
@@ -7,6 +8,9 @@ function App() {
   return (
     <div className="App">
       <h1>Hello world</h1>
+
+      <Alert success>This is a sample alert</Alert>
+      <Alert danger>This is a sample alert</Alert>
       <Image align="left" url={flowersImage} width="150px" height="100px" />
       <Image align="left" url="https://www.thesun.co.uk/wp-content/uploads/2020/09/NINTCHDBPICT000609910500.jpg" width="150px" height="100px" />
       <Paragraph size="17px" color="green">This is a large sample paragraph</Paragraph>
