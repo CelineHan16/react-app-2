@@ -1,7 +1,7 @@
-import "./Alert.css";
+import "./Button.css";
 
-function Alert(props) {
-  const className = ["Alert"];
+function Button(props) {
+  const className = ["Button"];
   if (props.success) {
     className.push('success');
   }
@@ -26,7 +26,10 @@ function Alert(props) {
   if (props.dark) {
     className.push('dark');
   }
-  return <div className={className.join(' ')}>{props.children}</div>
+  if (props.link) {
+    className.push('link');
+  }
+  return <button className={className.join(' ')}>{props.children}</button>
 }
 
-export default Alert;
+export default Button;
