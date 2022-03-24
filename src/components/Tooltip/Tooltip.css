@@ -18,7 +18,7 @@
 
   position: absolute;
   top: 100%;
-  left: 10px;
+  left: 20px;
   margin-top: -9px;
 
   visibility: hidden;
@@ -27,7 +27,7 @@
   visibility: visible;
 }
 .tooltip::after {
-  content: attr(description);
+  content: attr(dataTool);
 
   display: inline-block;
   padding: 5px 10px;
@@ -43,4 +43,34 @@
   margin-top: 10px;
   
   visibility: hidden;
+}
+
+.Tooltip.top::before {
+  border-color: rgba(0, 0, 0, .7) transparent transparent transparent;
+
+  margin-top: -41px;
+}
+.Tooltip.top::after {
+  margin-top: -70px;
+}
+
+.Tooltip.right::before {
+  border-color: transparent rgba(0, 0, 0, .7) transparent  transparent;
+  margin-top: -25px;
+  left: 52px;
+}
+.Tooltip.right::after {
+  left: 52px;
+  margin-top: -30px;
+}
+
+.Tooltip.left::before {
+  border-color: transparent transparent  transparent rgba(0, 0, 0, .7);
+  margin-top: -25px;
+  left: -11px;
+}
+.Tooltip.left::after {
+  width: 150px;
+  left: -180px;
+  margin-top: -22px;
 }

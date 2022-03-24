@@ -12,6 +12,9 @@ function App() {
       <h1>Hello world</h1>
 
       <Tooltip description="Please reply" top>RSVP</Tooltip>
+      <Tooltip description="Do it yourself">DIY</Tooltip>
+      <Tooltip description="Fear of missing out" left>FOMO</Tooltip>
+      <Tooltip description="Thank God it's Friday" right>TGIF</Tooltip>
 
       <br />
 
