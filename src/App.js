@@ -4,11 +4,16 @@ import Alert from "./components/Alert/Alert"
 import flowersImage from "./Assets/spring-flowers.jpg";
 import milkyWayImage from "./Assets/milky-way.jpg";
 import Button from "./components/Button/Button";
+import Tooltip from "./components/Tooltip/Tooltip";
 
 function App() {
   return (
     <div className="App">
       <h1>Hello world</h1>
+
+      <Tooltip description="Please reply" top>RSVP</Tooltip>
+
+      <br />
 
       <Button success>Success</Button>
       <Button danger>Danger</Button>
