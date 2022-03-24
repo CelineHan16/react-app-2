@@ -18,7 +18,6 @@ function App() {
       <Button info>Info</Button>
       <Button light>Light</Button>
       <Button dark>Dark</Button>
-      <Button dark>Dark</Button>
       <Button link>Link</Button>
 
       <Alert success>A simple success alert!</Alert>
