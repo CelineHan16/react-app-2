@@ -10,7 +10,8 @@ function Image(props) {
   return <img 
     className={className} 
     style={style} 
-    src={props.url} />
+    src={props.url}
+    alt="#" />
 }
 
 export default Image;
