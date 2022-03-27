@@ -11,13 +11,6 @@ function App() {
     <div className="App">
       <h1>Hello world</h1>
 
-      <Tooltip description="Please reply" top>RSVP</Tooltip>
-      <Tooltip description="Do it yourself">DIY</Tooltip>
-      <Tooltip description="Fear of missing out" left>FOMO</Tooltip>
-      <Tooltip description="Thank God it's Friday" right>TGIF</Tooltip>
-
-      <br />
-
       <Button success>Success</Button>
       <Button danger>Danger</Button>
       <Button secondary>Secondary</Button>
@@ -27,6 +20,13 @@ function App() {
       <Button light>Light</Button>
       <Button dark>Dark</Button>
       <Button link>Link</Button>
+
+      <br />
+
+      <Tooltip info="Please reply" top>RSVP</Tooltip>
+      <Tooltip info="Do it yourself">DIY</Tooltip>
+      <Tooltip info="Fear of missing out" left>FOMO</Tooltip>
+      <Tooltip info="Thank God it's Friday" right>TGIF</Tooltip>
 
       <Alert success>A simple success alert!</Alert>
       <Alert danger>A simple danger alert!</Alert>

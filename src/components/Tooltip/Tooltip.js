@@ -11,7 +11,9 @@ function Tooltip(props) {
   if (props.right) {
     className.push('right');
   }
-  return <button className={className.join(' ')} dataTool={props.description}>{props.children}</button>
+  return <div className={className.join(" ")}>{props.children}
+  <div className="info">{props.info}</div>
+  </div>;
 }
 
 export default Tooltip;
